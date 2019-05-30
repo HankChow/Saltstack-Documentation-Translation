@@ -1,4 +1,4 @@
-[原文](https://docs.saltstack.com/en/2019.2/topics/index.html)
+[原文][1]
 
 # Salt 简介
 
@@ -34,7 +34,7 @@ Salt 还可以更精细地控制远程执行操作，除了主机名之外，还
 
 ## 建立在成熟可靠的技术基础上
 
-Salt 采用了多种技术。在网络层使用了优秀的 ZeroMQ 网络库，因此 Salt 守护进程包含了一个可用且透明的 AMQ 代理。身份验证和加密是 Salt 运行的重要一环，因此 Salt 主守护进程通过公钥进行身份验证，然后使用更快的 AES 算法对负载通信进行加密。Salt 还使用了 msgpack 数据编码格式进行通信，以实现快速轻量的网络负载。
+Salt 采用了多种技术。在网络层使用了优秀的 ZeroMQ 网络库，因此 Salt 守护进程包含了一个可用且透明的 AMQ <ruby>代理<rt>broker</rt></ruby>。身份验证和加密是 Salt 运行的重要一环，因此 Salt 主守护进程通过公钥进行身份验证，然后使用更快的 AES 算法对负载通信进行加密。Salt 还使用了 msgpack 数据编码格式进行通信，以实现快速轻量的网络负载。
 
 ## Python 客户端接口
 
@@ -46,7 +46,7 @@ Salt 是一个可以从一台服务器上控制多台服务器快速执行命令
 
 ## 开源
 
-Salt 在 [Apache 2.0 许可](http://www.apache.org/licenses/LICENSE-2.0.html) 下开发，可以在开源或私有项目中使用。欢迎你将你的功能扩展代码提交到 Salt 项目，让我们与 Salt 共同成长、共同受益。
+Salt 在 [Apache 2.0 许可][2] 下开发，可以在开源或私有项目中使用。欢迎你将你的功能扩展代码提交到 Salt 项目，让我们与 Salt 共同成长、共同受益。
 
 ## Salt 社区
 
@@ -56,13 +56,13 @@ Salt 在 [Apache 2.0 许可](http://www.apache.org/licenses/LICENSE-2.0.html) �
 
 ## 邮件列表
 
-[salt-user 邮件列表](https://groups.google.com/forum/#!forum/salt-users) 是关注 Salt 最新问题和进展的最好的地方，欢迎加入。这个邮件列表由 Google Groups 托管，并且对新成员开放。
+[salt-user 邮件列表][3] 是关注 Salt 最新问题和进展的最好的地方，欢迎加入。这个邮件列表由 Google Groups 托管，并且对新成员开放。
 
 ## IRC
 
-`#salt` IRC 频道在 [Freenode](http://freenode.net/irc_servers.shtml) 上托管，在浏览器里通过 [Freenode 聊天客户端](http://webchat.freenode.net/?channels=salt&uio=Mj10cnVlJjk9dHJ1ZSYxMD10cnVl83) 即可访问。
+`#salt` IRC 频道在 [Freenode][4] 上托管，在浏览器里通过 [Freenode 聊天客户端][5] 即可访问。
 
-Moritz Lenz 正在收集 [IRC 频道活动的日志](http://irclog.perlgeek.de/salt/)。
+Moritz Lenz 正在收集 [IRC 频道活动的日志][6]。
 
 如果你对 Salt 的开发感兴趣，欢迎加入 `#salt-devel` 频道参与讨论。
 
@@ -70,59 +70,89 @@ Moritz Lenz 正在收集 [IRC 频道活动的日志](http://irclog.perlgeek.de/s
 
 Salt 的源代码托管在 Github 上，关注这个项目，可以获取项目的更新信息以及相关事项。
 
-GitHub 地址：[http://www.saltstack.com/blog/](http://www.saltstack.com/blog/)
+GitHub 地址：[https://github.com/saltstack/salt][7]
 
 ## 博客
 
-SaltStack 公司会在 [博客](http://www.saltstack.com/blog/) 中发布最近的新闻和项目进展。
+SaltStack 公司会在 [博客][8] 中发布最近的新闻和项目进展。
 
-博客地址：[http://www.saltstack.com/blog/](http://www.saltstack.com/blog/)
+博客地址：[http://www.saltstack.com/blog/][9]
 
 ## Salt states 样例
 
-官方 `salt-states` 的 GitHub 仓库地址：[https://github.com/saltstack/salt-states](https://github.com/saltstack/salt-states)
+官方 `salt-states` 的 GitHub 仓库地址：[https://github.com/saltstack/salt-states][10]
 
 以下是一些由社区提供的 salt states 样例：
 
-* [https://github.com/blast-hardcheese/blast-salt-states](https://github.com/blast-hardcheese/blast-salt-states)
+* [https://github.com/blast-hardcheese/blast-salt-states][11]
 
-* [https://github.com/kevingranade/kevingranade-salt-state](https://github.com/kevingranade/kevingranade-salt-state)
+* [https://github.com/kevingranade/kevingranade-salt-state][12]
 
-* [https://github.com/uggedal/states](https://github.com/uggedal/states)
+* [https://github.com/uggedal/states][13]
 
-* [https://github.com/mattmcclean/salt-openstack/tree/master/salt](https://github.com/mattmcclean/salt-openstack/tree/master/salt)
+* [https://github.com/mattmcclean/salt-openstack/tree/master/salt][14]
 
-* [https://github.com/rentalita/ubuntu-setup/](https://github.com/rentalita/ubuntu-setup/)
+* [https://github.com/rentalita/ubuntu-setup/][15]
 
-* [https://github.com/brutasse/states](https://github.com/brutasse/states)
+* [https://github.com/brutasse/states][16]
 
-* [https://github.com/bclermont/states](https://github.com/bclermont/states)
+* [https://github.com/bclermont/states][17]
 
-* [https://github.com/pcrews/salt-data](https://github.com/pcrews/salt-data)
+* [https://github.com/pcrews/salt-data][18]
 
 
 ## 在 OpenHub 上关注 Salt
 
-[https://www.openhub.net/p/salt](https://www.openhub.net/p/salt)
+[https://www.openhub.net/p/salt][19]
 
 ## 相关社区链接
 
-* [Salt Stack Inc.](http://www.saltstack.com/)
+* [Salt Stack Inc.][20]
 
-* [Subreddit](http://www.reddit.com/r/saltstack)
+* [Subreddit][21]
 
-* [Google+](https://plus.google.com/114449193225626631691/posts)
+* [Google+][22]
 
-* [YouTube](http://www.youtube.com/user/SaltStack)
+* [YouTube][23]
 
-* [Facebook](https://www.facebook.com/SaltStack)
+* [Facebook][24]
 
-* [Twitter](https://twitter.com/SaltStackInc)
+* [Twitter][25]
 
-* [Wikipedia page](http://en.wikipedia.org/wiki/Salt_(software))
+* [Wikipedia page][26]
 
-* [Stack Overflow](https://stackoverflow.com/questions/tagged/salt-stack)
+* [Stack Overflow][27]
 
 ## 为 Salt 贡献代码
 
-如果你希望为 Salt 的代码和文档作出贡献，请参阅 [贡献文档](https://docs.saltstack.com/en/2019.2/topics/development/contributing.html#contributing)。
+如果你希望为 Salt 的代码和文档作出贡献，请参阅 [贡献文档][28]。
+
+
+[1]: https://docs.saltstack.com/en/2019.2/topics/index.html
+[2]: http://www.apache.org/licenses/LICENSE-2.0.html
+[3]: https://groups.google.com/forum/#!forum/salt-users
+[4]: http://freenode.net/irc_servers.shtml
+[5]: http://webchat.freenode.net/?channels=salt&uio=Mj10cnVlJjk9dHJ1ZSYxMD10cnVl83
+[6]: http://irclog.perlgeek.de/salt/
+[7]: https://github.com/saltstack/salt
+[8]: http://www.saltstack.com/blog/
+[9]: http://www.saltstack.com/blog/
+[10]: https://github.com/saltstack/salt-states
+[11]: https://github.com/blast-hardcheese/blast-salt-states
+[12]: https://github.com/kevingranade/kevingranade-salt-state
+[13]: https://github.com/uggedal/states
+[14]: https://github.com/mattmcclean/salt-openstack/tree/master/salt
+[15]: https://github.com/rentalita/ubuntu-setup/
+[16]: https://github.com/brutasse/states
+[17]: https://github.com/bclermont/states
+[18]: https://github.com/pcrews/salt-data
+[19]: https://www.openhub.net/p/salt
+[20]: http://www.saltstack.com/
+[21]: http://www.reddit.com/r/saltstack
+[22]: https://plus.google.com/114449193225626631691/posts
+[23]: http://www.youtube.com/user/SaltStack
+[24]: https://www.facebook.com/SaltStack
+[25]: https://twitter.com/SaltStackInc
+[26]: http://en.wikipedia.org/wiki/Salt_(software)
+[27]: https://stackoverflow.com/questions/tagged/salt-stack
+[28]: https://docs.saltstack.com/en/2019.2/topics/development/contributing.html#contributing
