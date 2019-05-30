@@ -1,31 +1,31 @@
 # Saltstack-Documentation-Translation
 
-本项目针对 [Saltstack 官方文档](https://docs.saltstack.com/en/2019.2/contents.html) 进行翻译。由于完工时间不定，因此固定针对 2019.2.0(Fluorine) 版本文档进行翻译。
+本项目针对 [Saltstack 官方文档][1] 进行翻译。由于完工时间不定，因此固定针对 2019.2.0(Fluorine) 版本文档进行翻译。
 
 翻译顺序不严格按照原文档目录的顺序，在项目中已经翻译完成的部分会以指向对应译文页面的超链接表示。
 
-本项目维护一份[术语表](glossary.md)，文档中出现频率较高的一些固定译法会记录在术语表当中。
+本项目维护一份[术语表][2]，文档中出现频率较高的一些固定译法会记录在术语表当中。
 
 
 ## 文档目录
 
-* [Salt 简介(Introduction to Salt)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#salt-%E7%AE%80%E4%BB%8B)
-  * [30 秒搞懂 Salt 是什么(The 30 second summary)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#30-%E7%A7%92%E6%90%9E%E6%87%82-salt-%E6%98%AF%E4%BB%80%E4%B9%88)
-  * [简洁(Simplicity)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E7%AE%80%E6%B4%81)
-  * [并发操作(Parallel execution)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%B9%B6%E5%8F%91%E6%93%8D%E4%BD%9C)
-  * [建立在成熟可靠的技术基础上(Builds on proven technology)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%BB%BA%E7%AB%8B%E5%9C%A8%E6%88%90%E7%86%9F%E5%8F%AF%E9%9D%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E4%B8%8A)
-  * [Python 客户端接口(Python client interface)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#python-%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E5%8F%A3)
-  * [快速、灵活、可扩展(Fast, flexible, scalable)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%BF%AB%E9%80%9F%E7%81%B5%E6%B4%BB%E5%8F%AF%E6%89%A9%E5%B1%95)
-  * [开源(Open)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%BC%80%E6%BA%90)
-  * [Salt 社区(Salt Community)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#salt-%E7%A4%BE%E5%8C%BA)
-  * [邮件列表(Mailing List)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8)
-  * [IRC](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#irc)
-  * [在 GitHub 上关注 Salt(Follow on Github)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%9C%A8-github-%E4%B8%8A%E5%85%B3%E6%B3%A8-salt)
-  * [博客(Blogs)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%8D%9A%E5%AE%A2)
-  * [Salt states 样例(Example Salt States)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#salt-states-%E6%A0%B7%E4%BE%8B)
-  * [在 OpenHub 上关注 Salt(Follow on Open Hub)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E5%9C%A8-openhub-%E4%B8%8A%E5%85%B3%E6%B3%A8-salt)
-  * [相关社区链接(Other community links)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E7%9B%B8%E5%85%B3%E7%A4%BE%E5%8C%BA%E9%93%BE%E6%8E%A5)
-  * [为 Salt 贡献代码(Hack the Source)](https://github.com/HankChow/Saltstack-Documentation-Translation/tree/master/1.Introduction%20to%20Salt#%E4%B8%BA-salt-%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81)
+* [Salt 简介(Introduction to Salt)][3]
+  * [30 秒搞懂 Salt 是什么(The 30 second summary)][4]
+  * [简洁(Simplicity)][5]
+  * [并发操作(Parallel execution)][6]
+  * [建立在成熟可靠的技术基础上(Builds on proven technology)][7]
+  * [Python 客户端接口(Python client interface)][8]
+  * [快速、灵活、可扩展(Fast, flexible, scalable)][9]
+  * [开源(Open)][10]
+  * [Salt 社区(Salt Community)][11]
+  * [邮件列表(Mailing List)][12]
+  * [IRC][13]
+  * [在 GitHub 上关注 Salt(Follow on Github)][14]
+  * [博客(Blogs)][15]
+  * [Salt states 样例(Example Salt States)][16]
+  * [在 OpenHub 上关注 Salt(Follow on Open Hub)][17]
+  * [相关社区链接(Other community links)][18]
+  * [为 Salt 贡献代码(Hack the Source)][19]
 * Installation
   * Quick Install
   * Platform-specific Installation Instructions
@@ -245,3 +245,24 @@
   * Example Usage
   * Runner Functions
 * Glossary
+
+
+[1]: https://docs.saltstack.com/en/2019.2/contents.html
+[2]: glossary.md
+[3]: 1.Introduction%20to%20Salt#salt-%E7%AE%80%E4%BB%8B
+[4]: 1.Introduction%20to%20Salt#30-%E7%A7%92%E6%90%9E%E6%87%82-salt-%E6%98%AF%E4%BB%80%E4%B9%88
+[5]: 1.Introduction%20to%20Salt#%E7%AE%80%E6%B4%81
+[6]: 1.Introduction%20to%20Salt#%E5%B9%B6%E5%8F%91%E6%93%8D%E4%BD%9C
+[7]: 1.Introduction%20to%20Salt#%E5%BB%BA%E7%AB%8B%E5%9C%A8%E6%88%90%E7%86%9F%E5%8F%AF%E9%9D%A0%E7%9A%84%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E4%B8%8A
+[8]: 1.Introduction%20to%20Salt#python-%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E5%8F%A3
+[9]: 1.Introduction%20to%20Salt#%E5%BF%AB%E9%80%9F%E7%81%B5%E6%B4%BB%E5%8F%AF%E6%89%A9%E5%B1%95
+[10]: 1.Introduction%20to%20Salt#%E5%BC%80%E6%BA%90
+[11]: 1.Introduction%20to%20Salt#salt-%E7%A4%BE%E5%8C%BA
+[12]: 1.Introduction%20to%20Salt#%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8
+[13]: 1.Introduction%20to%20Salt#irc
+[14]: 1.Introduction%20to%20Salt#%E5%9C%A8-github-%E4%B8%8A%E5%85%B3%E6%B3%A8-salt
+[15]: 1.Introduction%20to%20Salt#%E5%8D%9A%E5%AE%A2
+[16]: 1.Introduction%20to%20Salt#salt-states-%E6%A0%B7%E4%BE%8B
+[17]: 1.Introduction%20to%20Salt#%E5%9C%A8-openhub-%E4%B8%8A%E5%85%B3%E6%B3%A8-salt
+[18]: 1.Introduction%20to%20Salt#%E7%9B%B8%E5%85%B3%E7%A4%BE%E5%8C%BA%E9%93%BE%E6%8E%A5
+[19]: 1.Introduction%20to%20Salt#%E4%B8%BA-salt-%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81
