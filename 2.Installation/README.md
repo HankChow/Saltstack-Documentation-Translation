@@ -42,6 +42,43 @@ salt '*' test.version
 * [Windows][16]
 * [SUSE][17]
 
+# 初始化配置
+
+* [配置 Salt][18]
+
+# 其它相关安装说明
+
+* [Salt 自动安装脚本][19]
+* [为 Salt 开放防火墙规则][20]
+* [salt-master 服务通信白名单配置][21]
+* [使用已被接受的 key 对 salt-minion 进行预配置][22]
+* [MacOS(Maverick) 开发者的 Salt 安装说明][23]
+* [如何使用普通用户运行 Salt][24]
+* [单独运行 salt-minion][25]
+* [Salt Masterless 速成教程][26]
+
+# Salt 的依赖项
+
+在满足以下依赖项的前提下，Salt 应该可以在任何类 Unix 操作系统上运行。
+
+* [Python][27]：Python2 >= 2.7，Python3 >= 3.4
+
+* [msgpack-python][28]：高性能的数据交换格式
+
+* [YAML][29]：Python YAML 库
+
+* [Jinja2][30]：解析 salt-states（可以在 salt-master 中配置）
+
+* [MarkupSafe][31] - 在 Python 中安全地处理 XML/HTML/XHTML
+
+* [apache-libcloud][32] - 用于为各种常用云服务提供统一 API 的 Python 库
+
+* [Requests][33] - HTTP 库
+
+* [Tornado][34] - Web 框架、异步网络库
+
+* [futures][35] - 仅 Python2 需要这个依赖项，用于支持 Python 3.2 的并发实现
+
 
 [1]: https://docs.saltstack.com/en/2019.2/topics/installation/index.html
 [2]: /to-be-done.md
@@ -60,3 +97,21 @@ salt '*' test.version
 [15]: /to-be-done.md
 [16]: /to-be-done.md
 [17]: /to-be-done.md
+[18]: /to-be-done.md
+[19]: /to-be-done.md
+[20]: /to-be-done.md
+[21]: /to-be-done.md
+[22]: /to-be-done.md
+[23]: /to-be-done.md
+[24]: /to-be-done.md
+[25]: /to-be-done.md
+[26]: /to-be-done.md
+[27]: http://python.org/download/
+[28]: https://pypi.python.org/pypi/msgpack-python/
+[29]: http://pyyaml.org/
+[30]: http://jinja.pocoo.org/
+[31]: https://pypi.python.org/pypi/MarkupSafe
+[32]: http://libcloud.apache.org/
+[33]: http://docs.python-requests.org/en/latest
+[34]: http://www.tornadoweb.org/en/stable/
+[35]: https://github.com/agronholm/pythonfutures
