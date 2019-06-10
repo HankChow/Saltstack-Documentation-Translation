@@ -42,11 +42,11 @@ salt '*' test.version
 * [Windows][16]
 * [SUSE][17]
 
-# 初始化配置
+## 初始化配置
 
 * [配置 Salt][18]
 
-# 其它相关安装说明
+## 其它相关安装说明
 
 * [Salt 自动安装脚本][19]
 * [为 Salt 开放防火墙规则][20]
@@ -57,7 +57,7 @@ salt '*' test.version
 * [单独运行 salt-minion][25]
 * [Salt Masterless 速成教程][26]
 
-# Salt 的依赖项
+## Salt 的依赖项
 
 在满足以下依赖项的前提下，Salt 应该可以在任何类 Unix 操作系统上运行。
 
@@ -100,18 +100,18 @@ pip install --install-option="--salt-transport=raet" salt
 >
 > 对于那些通常由基本操作系统自带的依赖项，Salt 不会下载。如果在自定义安装或最小安装过程中发现有不满足的依赖项，就需要安装由操作系统供应商提供的一些附加软件包。
 
-# 可选依赖项
+## 可选依赖项
 
 * [mako][43] - 可选的 salt-states 解析器（可以在 salt-master 配置文件中配置）
 * gcc - 动态 Cython 编译器
 
-# 升级 Salt
+## 升级 Salt
 
 在升级 Salt 的时候，应该始终先升级 salt-master。当 salt-minion 的版本比 salt-master 的版本新的时候，可能会产生不向下兼容的情况。
 
 一般情况下，当 salt-master 的版本比 salt-minion 的版本新的时候，是可以向下兼容的。但在有安全漏洞时，则不作这个保证。
 
-# 使用 Salt Pack 构建软件包
+## 使用 Salt Pack 构建软件包
 
 salt-pack 是一个开源程序包构建器，它适用于包括 RedHat、CentOS、Debian、Ubuntu 在内的大部分 Linux 平台。它使用 salt-state 和执行模块来构建 Salt 以及某些执行的依赖项，进而可以构建平台专用的存储库。
 
