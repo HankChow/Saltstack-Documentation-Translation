@@ -62,22 +62,58 @@ salt '*' test.version
 在满足以下依赖项的前提下，Salt 应该可以在任何类 Unix 操作系统上运行。
 
 * [Python][27]：Python2 >= 2.7，Python3 >= 3.4
-
 * [msgpack-python][28]：高性能的数据交换格式
-
 * [YAML][29]：Python YAML 库
-
 * [Jinja2][30]：解析 salt-states（可以在 salt-master 中配置）
-
 * [MarkupSafe][31] - 在 Python 中安全地处理 XML/HTML/XHTML
-
 * [apache-libcloud][32] - 用于为各种常用云服务提供统一 API 的 Python 库
-
 * [Requests][33] - HTTP 库
-
 * [Tornado][34] - Web 框架、异步网络库
-
 * [futures][35] - 仅 Python2 需要这个依赖项，用于支持 Python 3.2 的并发实现
+
+Salt 可以使用 [ZeroMQ][36] 或 [RAET][37] 进行消息传输，两者所需的依赖项有不同：
+
+* ZeroMQ：
+  - [ZeroMQ][36] >= 3.2.0
+  - [pyzmq][38] >= 2.2.0 - ZeroMQ Python 库
+  - [PyCrypto][39] - The Python 加密工具库
+* RAET：
+  - [libnacl][40] - Python [libsodium][41] 库
+  - [ioflo][42] - raet 和 salt-raet 需要依赖的 flo 接口
+  - [RAET][37] - 流行的 UDP 协议
+
+在默认情况下 Salt 使用 [ZeroMQ][36] 进行消息传输，你也可以在安装的时候更改这个选项。例如：
+
+```
+python setup.py --salt-transport=raet install
+```
+
+这种情况下，Salt 安装脚本只会下载需要的依赖项。
+
+如果通过 pip 安装 Salt，`--salt-transport` 参数需要这样提供：
+
+```
+pip install --install-option="--salt-transport=raet" salt
+```
+
+> 注意
+>
+> 对于那些通常由基本操作系统自带的依赖项，Salt 不会下载。如果在自定义安装或最小安装过程中发现有不满足的依赖项，就需要安装由操作系统供应商提供的一些附加软件包。
+
+# 可选依赖项
+
+* [mako][43] - 可选的 salt-states 解析器（可以在 salt-master 配置文件中配置）
+* gcc - 动态 Cython 编译器
+
+# 升级 Salt
+
+在升级 Salt 的时候，应该始终先升级 salt-master。当 salt-minion 的版本比 salt-master 的版本新的时候，可能会产生不向下兼容的情况。
+
+一般情况下，当 salt-master 的版本比 salt-minion 的版本新的时候，是可以向下兼容的。但在有安全漏洞时，则不作这个保证。
+
+# 使用 Salt Pack 构建软件包
+
+salt-pack 是一个开源程序包构建器，它适用于包括 RedHat、CentOS、Debian、Ubuntu 在内的大部分 Linux 平台。它使用 salt-state 和执行模块来构建 Salt 以及某些执行的依赖项，进而可以构建平台专用的存储库。
 
 
 [1]: https://docs.saltstack.com/en/2019.2/topics/installation/index.html
@@ -115,3 +151,11 @@ salt '*' test.version
 [33]: http://docs.python-requests.org/en/latest
 [34]: http://www.tornadoweb.org/en/stable/
 [35]: https://github.com/agronholm/pythonfutures
+[36]: http://zeromq.org/
+[37]: https://github.com/saltstack/raet
+[38]: https://github.com/zeromq/pyzmq
+[39]: https://www.dlitz.net/software/pycrypto/
+[40]: https://github.com/saltstack/libnacl
+[41]: https://github.com/jedisct1/libsodium
+[42]: https://github.com/ioflo/ioflo
+[43]: http://www.makotemplates.org/
