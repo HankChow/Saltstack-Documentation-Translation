@@ -26,15 +26,15 @@
   * [在 OpenHub 上关注 Salt(Follow on Open Hub)][17]
   * [相关社区链接(Other community links)][18]
   * [为 Salt 贡献代码(Hack the Source)][19]
-* Installation
-  * Quick Install
-  * Platform-specific Installation Instructions
-  * Initial Configuration
-  * Additional Installation Guides
-  * Dependencies
-  * Optional Dependencies
-  * Upgrading Salt
-  * Building Packages using Salt Pack
+* [Installation][20]
+  * [Quick Install][21]
+  * [Platform-specific Installation Instructions][22]
+  * [Initial Configuration][23]
+  * [Additional Installation Guides][24]
+  * [Dependencies][25]
+  * [Optional Dependencies][26]
+  * [Upgrading Salt][27]
+  * [Building Packages using Salt Pack][28]
 * Configuring Salt
   * Configuring the Salt Master
   * Configuring the Salt Minion
@@ -266,3 +266,12 @@
 [17]: 1.Introduction%20to%20Salt#%E5%9C%A8-openhub-%E4%B8%8A%E5%85%B3%E6%B3%A8-salt
 [18]: 1.Introduction%20to%20Salt#%E7%9B%B8%E5%85%B3%E7%A4%BE%E5%8C%BA%E9%93%BE%E6%8E%A5
 [19]: 1.Introduction%20to%20Salt#%E4%B8%BA-salt-%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81
+[20]: 2.Installation#%E5%AE%89%E8%A3%85-salt
+[21]: 2.Installation#%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85
+[22]: 2.Installation#%E7%89%B9%E5%AE%9A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E6%8C%87%E5%BC%95
+[23]: 2.Installation#%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE
+[24]: 2.Installation#%E5%85%B6%E5%AE%83%E7%9B%B8%E5%85%B3%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E
+[25]: 2.Installation#salt-%E7%9A%84%E4%BE%9D%E8%B5%96%E9%A1%B9 
+[26]: 2.Installation#%E5%8F%AF%E9%80%89%E4%BE%9D%E8%B5%96%E9%A1%B9
+[27]: 2.Installation#%E5%8D%87%E7%BA%A7-salt
+[28]: 2.Installation#%E4%BD%BF%E7%94%A8-salt-pack-%E6%9E%84%E5%BB%BA%E8%BD%AF%E4%BB%B6%E5%8C%85 
